@@ -34,8 +34,6 @@ extern const CGFloat LNPopupBarHeight;
 @property (nonatomic, strong) UIView* highlightView;
 - (void)setHighlighted:(BOOL)highlighted;
 
-@property (nonatomic, strong) UIProgressView* progressView;
-
 @property (nonatomic, copy) NSString* accessibilityCenterLabel;
 @property (nonatomic, copy) NSString* accessibilityCenterHint;
 @property (nonatomic, copy) NSString* accessibilityProgressLabel;

@@ -486,7 +486,7 @@ static CGFloat __smoothstep(CGFloat a, CGFloat b, CGFloat x)
 - (void)_reconfigure_progress
 {
 	[UIView performWithoutAnimation:^{
-		[_popupBar.progressView setProgress:_currentPopupItem.progress animated:NO];
+        [_popupBar.progressView setValue:_currentPopupItem.progress];
 	}];
 }
 

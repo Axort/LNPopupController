@@ -68,6 +68,8 @@ extern const NSInteger LNBarStyleInherit;
  */
 @property(nullable, nonatomic, copy) NSDictionary<NSString*, id>* subtitleTextAttributes UI_APPEARANCE_SELECTOR;
 
+@property (nonatomic, strong) UISlider* progressView;
+
 @end
 
 NS_ASSUME_NONNULL_END
