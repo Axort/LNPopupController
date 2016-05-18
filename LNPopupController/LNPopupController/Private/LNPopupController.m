@@ -490,6 +490,11 @@ static CGFloat __smoothstep(CGFloat a, CGFloat b, CGFloat x)
 	}];
 }
 
+- (void)_reconfigure_imgThumg {
+    [_popupBar.progressView setThumbImage:_currentPopupItem.imgThumb
+                                 forState:UIControlStateNormal];
+}
+
 - (void)_reconfigure_accessibilityLavel
 {
 	_popupBar.accessibilityCenterLabel = _currentPopupItem.accessibilityLabel;
@@ -571,7 +576,7 @@ static CGFloat __smoothstep(CGFloat a, CGFloat b, CGFloat x)
 		}
 	}
 	
-	NSArray<NSString*>* keys = @[@"title", @"subtitle", @"progress", @"leftBarButtonItems", @"accessibilityLavel", @"accessibilityHint", @"accessibilityProgressLabel", @"accessibilityProgressValue"];
+	NSArray<NSString*>* keys = @[@"title", @"subtitle", @"progress", @"imgThumb", @"leftBarButtonItems", @"accessibilityLavel", @"accessibilityHint", @"accessibilityProgressLabel", @"accessibilityProgressValue"];
 	[keys enumerateObjectsUsingBlock:^(NSString * __nonnull key, NSUInteger idx, BOOL * __nonnull stop) {
 		[self _popupItem:_currentPopupItem didChangeValueForKey:key];
 	}];
