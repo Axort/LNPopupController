@@ -11,12 +11,12 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/jonathanort/LNPopupController",
+    "git": "https://github.com/Axort/LNPopupController.git",
     "tag": "0.0.4"
   },
   "source_files": [
-    "Pod/LNPopupController/LNPopupController/*",
-    "Pod/LNPopupController/LNPopupController/Private/*"
+    "LNPopupController/LNPopupController/*",
+    "LNPopupController/LNPopupController/Private/*"
   ],
   "requires_arc": true
 }
