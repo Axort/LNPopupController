@@ -490,7 +490,7 @@ static CGFloat __smoothstep(CGFloat a, CGFloat b, CGFloat x)
 	}];
 }
 
-- (void)_reconfigure_imgThumg {
+- (void)_reconfigure_imgThumb {
     [_popupBar.progressView setThumbImage:_currentPopupItem.imgThumb
                                  forState:UIControlStateNormal];
 }
