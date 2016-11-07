@@ -71,7 +71,7 @@ const NSInteger LNBarStyleInherit = -1;
 		[self.toolbar addSubview:_titlesView];
 		
 		_progressView = [[UISlider alloc] init];
-        [_progressView setThumbImage:[UIImage new] forState:UIControlStateNormal];
+//        [_progressView setThumbImage:[UIImage new] forState:UIControlStateNormal];
 		_progressView.translatesAutoresizingMaskIntoConstraints = NO;
 		[_toolbar addSubview:_progressView];
 		[self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_progressView(1)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_progressView)]];
